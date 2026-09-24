@@ -291,6 +291,7 @@ h2::after {
 
 .linha article {
   position: relative;
+  min-width: 0;
 }
 
 .linha article::before {
@@ -318,7 +319,7 @@ h2::after {
 
 .diploma {
   margin-top: 1rem;
-  max-width: 520px;
+  max-width: min(520px, 100%);
   border: 4px solid var(--preto);
   border-radius: 10px;
 }

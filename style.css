@@ -1,4 +1,6 @@
-
+/* ==========================================================
+   VARIÁVEIS (cores e fontes)
+   ========================================================== */
 :root {
   --preto: #0a0a0c;
   --grafite: #17151d;
@@ -14,6 +16,10 @@
   box-sizing: border-box;
 }
 
+
+/* ==========================================================
+   BASE
+   ========================================================== */
 *,
 *::before,
 *::after {
@@ -62,6 +68,10 @@ a:focus-visible {
   margin-inline: auto;
 }
 
+
+/* ==========================================================
+   CABEÇALHO
+   ========================================================== */
 .topo {
   position: sticky;
   top: 0;
@@ -96,6 +106,10 @@ a:focus-visible {
   font-size: 0.9rem;
 }
 
+
+/* ==========================================================
+   SEÇÕES (estrutura geral)
+   ========================================================== */
 section {
   padding: 5rem 0;
 }
@@ -124,6 +138,10 @@ h2::after {
   border-radius: 3px;
 }
 
+
+/* ==========================================================
+   HERO (apresentação)
+   ========================================================== */
 .hero {
   padding: 4rem 0 5rem;
   background:
@@ -160,6 +178,10 @@ h2::after {
   margin-top: 1.4rem;
 }
 
+
+/* ==========================================================
+   BOTÕES
+   ========================================================== */
 .botoes {
   display: flex;
   flex-wrap: wrap;
@@ -191,6 +213,10 @@ h2::after {
   background: var(--roxo-escuro);
 }
 
+
+/* ==========================================================
+   FOTO DE PERFIL
+   ========================================================== */
 .foto {
   position: relative;
   justify-self: center;
@@ -217,9 +243,12 @@ h2::after {
   background: var(--grafite);
 }
 
+
+/* ==========================================================
+   CARTÕES (experiência)
+   ========================================================== */
 .cartao {
   background: var(--grafite);
-  border-left: 6px solid var(--roxo);
   border-radius: 14px;
   padding: 1.6rem 1.8rem;
 }
@@ -248,6 +277,10 @@ h2::after {
   background: var(--preto);
 }
 
+
+/* ==========================================================
+   LINHA DO TEMPO (formação)
+   ========================================================== */
 .linha {
   position: relative;
   padding-left: 2rem;
@@ -290,6 +323,10 @@ h2::after {
   border-radius: 10px;
 }
 
+
+/* ==========================================================
+   HABILIDADES
+   ========================================================== */
 .grade {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -297,7 +334,7 @@ h2::after {
 }
 
 .grade div {
-  border: 2px solid var(--roxo);
+  background: var(--grafite);
   border-radius: 14px;
   padding: 1.3rem 1.4rem;
 }
@@ -314,6 +351,10 @@ h2::after {
   font-size: 1rem;
 }
 
+
+/* ==========================================================
+   PROJETOS
+   ========================================================== */
 .projeto {
   display: flex;
   flex-wrap: wrap;
@@ -340,6 +381,10 @@ h2::after {
   background: var(--grafite);
 }
 
+
+/* ==========================================================
+   CONTATO
+   ========================================================== */
 .contato p {
   font-size: 1.15rem;
   color: #d9d4e6;
@@ -350,6 +395,10 @@ h2::after {
   padding: 1rem 1.8rem;
 }
 
+
+/* ==========================================================
+   RODAPÉ
+   ========================================================== */
 footer {
   background: var(--preto);
   color: #a9a3bb;
@@ -363,6 +412,10 @@ footer strong {
   color: var(--branco);
 }
 
+
+/* ==========================================================
+   RESPONSIVO (celular)
+   ========================================================== */
 @media (max-width: 760px) {
   .hero .wrap {
     grid-template-columns: 1fr;
